@@ -1,7 +1,7 @@
 
 Forensic Analysis of Computer File Systems Using Vector Search and Large Language Models (LLMs) For Enhanced Cybersecurity and Data Recovery
-Creators
 
+Creators:
     Reis da Silva, Bruno (Other)
     ORCID icon: https://zenodo.org/records/15914817
 
