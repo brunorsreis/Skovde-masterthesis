@@ -28,4 +28,10 @@ The tool detects renamed, obfuscated, or semantically disguised sensitive conten
 
     Appendix B includes the cloud-enhanced version of the tool, demonstrating integration with Oracle Cloud Infrastructure (OCI) and the Cohere command-a-03-2025 model for scalable, multilingual forensic analysis.
 
+ransomware_dataset_mutator.py
+This Python utility generates synthetic variations of ransomware-related datasets for controlled testing. It mutates existing samples by introducing random filename changes, obfuscations, and benign-like artifacts, simulating the way adversaries disguise sensitive or malicious content. The script was used to validate the semantic vector search capabilities of the forensic tool by ensuring that hidden or obfuscated information could still be retrieved under realistic adversarial conditions.
+
+analyze_ripgrep.sh
+This Bash script automates the benchmarking of ripgrep against the test datasets. It converts documents into text where necessary, runs pattern-based searches, and collates the results for comparison with the semantic and regex-enhanced pipeline. This provided a reproducible baseline for evaluating the strengths and limitations of traditional string-matching techniques relative to the proposed hybrid approach.
+
 Together, these components reflect a hybrid architecture that supports reproducible, explainable, and platform-independent digital forensics.
